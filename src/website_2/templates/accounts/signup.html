@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creer un compte</title>
+</head>
+<body>
+<h1>Creer un compte</h1>
+<form method="POST" >
+    {%csrf_token%}
+    <table>
+{{ form.as_p}}
+    </table>
+<input type="submit" value="S'incrire">
+</form>
+</body>
+</html>
